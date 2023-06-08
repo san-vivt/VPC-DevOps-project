@@ -1,4 +1,8 @@
+
+![Image diagram](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/VPC-Test-project.drawio.png)
+
 <!---
+-->
 <h1 align="center">Vue Baremetrics Calendar</h1>
 
 <p align="center">
@@ -35,8 +39,7 @@ Redesigned and Wrapped for Vue.js by [Divyansh Tripathi](https://silentlad.com)
 <p align="center">
 <img src="https://media.giphy.com/media/VFvkCMvXvlTNAGuaZm/giphy.gif">
 </p>
--->
-![Image diagram](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/VPC-Test-project.drawio.png)
+
 # Installation
 
 `npm i --save vue2-baremetrics-calendar`
