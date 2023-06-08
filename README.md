@@ -1,8 +1,28 @@
+<h1 align="center">Lab diagram</h1>
+
+_This repository shows a test infrastructure in the AWS cloud._
+
+---
 
 ![Image diagram](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/VPC-Test-project.drawio.png)
 
+# Creating a VPC
+
+### In the AWS Management Console, select the  Services menu, and then select VPC under Networking & Content Delivery.
+
+**1. In the left navigation menu, choose _Elastic IPs_.**
+**2. Choose _Allocate Elastic IP_ address.**
+**3. On the Allocate Elastic IP address page, leave the settings as is, and choose _Allocate_.**
+
+### In the left navigation menu, choose _VPC Dashboard_.
+
+**1. Choose _Create VPC_.**
+**2. For Step 1: _Select a VPC Configuration_, choose _VPC with Public and Private Subnets_.**
+**3. **
+
+
 <!---
--->
+
 <h1 align="center">Vue Baremetrics Calendar</h1>
 
 <p align="center">
@@ -23,6 +43,7 @@
 
 <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
 </p>
+
 
 _A Vue.js wrapper for the beautiful date-range picker made by the **[Baremetrics](https://baremetrics.com)** team._
 
@@ -193,3 +214,4 @@ Once registered you can use the component in its default settings with as follow
     }
   ];
   ```
+-->
