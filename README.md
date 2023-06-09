@@ -8,7 +8,40 @@ _This repository shows a test infrastructure in the AWS cloud._
 
 # Creating a VPC
 
-### In the AWS Management Console, select the  Services menu, and then select VPC under Networking & Content Delivery.
+
+We will create VPC, 4 Subnets and place the EC-2 instance inside the subnet.
+
+We will also install a webserver on the EC-2 instance and access it using a web browser.
+
+### Quick Check
+
+1. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts)
+2.Create an Internet Gateway and attach it to the newly created VPC
+3.Create Public Subnet-1 in Availability Zone-1 with the CIDR 10.0.0.0/24
+4.Create Private Subnet-1 in Availability Zone-1 with CIDR of 10.0.1.0/24
+5.Create an Elastic IP.
+6.Create a NAT Gateway using the Elastic IP and Public Subnet -1 as base
+7.Create Public Subnet-2 in Availability Zone-2 with the CIDR 10.0.2.0/24
+8.Create Private Subnet-2 in Availability Zone-2 with the CIDR 10.0.3.0/24
+9.Update Route Configurations for present Route Table and name it Private Route Table
+10.Create Public Route Table and update Route Configurations
+11.Create VPC Security Group to allow inbound HTTP,HTTPS and SSH
+12.Create EC-2 Instances using the VPC Created as base and the Public Subnet-1 as EC-2 Location.
+13.Enable Public IP for the EC-2 
+15.Associate the VPC Security Group for the EC-2
+14.Update User Data for the EC-2
+15.Launch EC-2
+16.Test Webserver running on EC-2 using a browser.
+After completing the above steps, you can successfully complete this work using the following guide:
+
+
+### Step by Step Review
+
+1. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts).
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo1.png)
+
+<!---
 
 **1. In the left navigation menu, choose _Elastic IPs_.**
 **2. Choose _Allocate Elastic IP_ address.**
@@ -21,7 +54,7 @@ _This repository shows a test infrastructure in the AWS cloud._
 **3. **
 
 
-<!---
+
 
 <h1 align="center">Vue Baremetrics Calendar</h1>
 
