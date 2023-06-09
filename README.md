@@ -15,7 +15,7 @@ We will also install a webserver on the EC-2 instance and access it using a web 
 
 ### Quick Check
 
-1. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts)
+1\. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts)
 
 2.Create an Internet Gateway and attach it to the newly created VPC
 
