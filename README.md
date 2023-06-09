@@ -128,6 +128,41 @@ Update Private Route Table Route’s as follows
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo16.png)
 
+  Follow these commands after a successful connection:
+
+  (Or make a .sh file give chmod and run)
+
+
+```bash
+#!/bin/bash
+
+sudo su
+
+yum update
+
+# Install Apache Web Server and PHP
+
+yum install -y httpd
+
+yum install -y mysql
+
+yum install -y php
+
+# Download Lab files
+
+wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/267-lab-NF-build-vpc-web-server/s3/lab-app.zip
+
+unzip lab-app.zip -d /var/www/html/
+
+# Turn on web server
+
+chkconfig httpd on
+
+service httpd start
+
+```
+
+
   Enter to our WEB page:
 
 ``` http://<our_instance_ip>```
@@ -135,15 +170,17 @@ Update Private Route Table Route’s as follows
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo21.png)
 
   Enter the magic command just for fun to load our one CPU core of the instance to 100%
+
   (# -- mean root user)
 
 ```# yes > /dev/null &```
 
-BOOM!
+  Voila, BOOM!
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo23.png)
 
-### Congratulations!!!
+
+<h1 align="center">Congratulations!!!</h1>
 
 
 <!---
