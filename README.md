@@ -100,6 +100,7 @@ Update Private Route Table Route’s as follows
 | 0.0.0.0/0   | NAT Gateway |
 
 
+
 10
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo10.png)
 11
