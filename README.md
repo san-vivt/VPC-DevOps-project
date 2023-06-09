@@ -41,13 +41,13 @@ We will also install a webserver on the EC-2 instance and access it using a web 
 
   13.Enable Public IP for the EC-2 
 
-  15.Associate the VPC Security Group for the EC-2
+  14.Associate the VPC Security Group for the EC-2
 
-  14.Update User Data for the EC-2
+  15.Update User Data for the EC-2
 
-  15.Launch EC-2
+  16.Launch EC-2
 
-  16.Test Webserver running on EC-2 using a browser.
+  17.Test Webserver running on EC-2 using a browser.
 
 After completing the above steps, you can successfully complete this work using the following guide:
 
@@ -109,25 +109,43 @@ Update Private Route Table Route’s as follows
 13
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo13.png)
 14
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo14.png)
-15
-![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo15.png)
-16
-![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo16.png)
+
 17
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo17.png)
 18
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo18.png)
 19
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo19.png)
-20
-![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo20.png)
-21
+
+  Connect our instance:
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo15.png)
+
+
+  Connect by SSH:
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo16.png)
+
+  Enter to our WEB page:
+
+``` http://<our_instance_ip>```
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo21.png)
-22
-![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo22.png)
-23
+
+  Enter the magic command just for fun to load our one CPU core of the instance to 100%
+  (# -- mean root user)
+
+```# yes > /dev/null &```
+
+BOOM!
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo23.png)
+
+### Congratulations!!!
+
+
 <!---
 
 **1. In the left navigation menu, choose _Elastic IPs_.**
