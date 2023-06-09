@@ -100,33 +100,90 @@ Update Private Route Table Route’s as follows
 | 0.0.0.0/0   | NAT Gateway |
 
 
-10
+
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo10.png)
-11
+
+  Create Public Route Table and update Route Configurations.
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo11.png)
-12
+
+  10\. Create Public Route Table and update Route Configurations.
+
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo12.png)
-13
+
+  11\. Create VPC Security Group to allow inbound HTTP,HTTPS and SSH
+
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo13.png)
-14
+
+
+12. Create EC-2 Instances using the VPC Created as Base and the Public Subnet-1 as EC-2 Location.
+
+13. Enable Public IP for the EC-2 
+
+14. Associate the VPC Security Group for the EC-2
+
+15. Update User Data for the EC-2
+
+
+
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo14.png)
 
-17
-![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo17.png)
-18
+
+  Doublececk our Public Routes:
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo18.png)
-19
+
+  Doublececk our Private Routes:
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo19.png)
 
-  Connect our instance:
+  15\. Launch EC-2
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo15.png)
 
 
-  Connect by SSH:
+16. Connect by SSH:
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo16.png)
+
+17. Follow these commands after a successful connection:
+
+  (Or make a .sh file give chmod and run)
+
+
+```bash
+#!/bin/bash
+
+sudo su
+
+yum update
+
+# Install Apache Web Server and PHP
+
+yum install -y httpd
+
+yum install -y mysql
+
+yum install -y php
+
+# Download Lab files
+
+wget https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/lab-app-san.zip
+
+unzip lab-app-san.zip -d /var/www/html/
+
+# Turn on web server
+
+chkconfig httpd on
+
+service httpd start
+
+```
+
 
   Enter to our WEB page:
 
@@ -134,19 +191,27 @@ Update Private Route Table Route’s as follows
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo21.png)
 
-  Enter the magic command just for fun to load our one CPU core of the instance to 100%
+  Enter the magic command in terminal, just for fun, to load our one CPU core of the instance to 100%
+
   (# -- mean root user)
 
 ```# yes > /dev/null &```
 
-BOOM!
+  Voila, BOOM!
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo23.png)
 
-### Congratulations!!!
+
+<h1 align="center">Congratulations!!!</h1>
+
+
 
 
 <!---
+
+
+wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/267-lab-NF-build-vpc-web-server/s3/lab-app.zip
+
 
 **1. In the left navigation menu, choose _Elastic IPs_.**
 **2. Choose _Allocate Elastic IP_ address.**
