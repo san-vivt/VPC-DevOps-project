@@ -97,7 +97,6 @@ Update Private Route Table Route’s as follows
 | Destination |   Target    |
 | ----------- | ----------- |
 | 10.0.0.0/16 |    Local    |
-|             |             |
 | 0.0.0.0/0   | NAT Gateway |
 
 
