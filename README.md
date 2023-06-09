@@ -119,9 +119,15 @@ Update Private Route Table Route’s as follows
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo13.png)
 
 
-  12\. Create EC-2 Instances using the VPC Created as Base and the Public Subnet -1 as EC-2 Location.
-  13\. Enable Public IP for the EC-2 
-  15\. Associate the VPC Security Group for the EC-2
+12. Create EC-2 Instances using the VPC Created as Base and the Public Subnet-1 as EC-2 Location.
+
+13. Enable Public IP for the EC-2 
+
+14. Associate the VPC Security Group for the EC-2
+
+15. Update User Data for the EC-2
+
+
 
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo14.png)
@@ -166,9 +172,9 @@ yum install -y php
 
 # Download Lab files
 
-wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/267-lab-NF-build-vpc-web-server/s3/lab-app.zip
+wget https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/lab-app-san.zip
 
-unzip lab-app.zip -d /var/www/html/
+unzip lab-app-san.zip -d /var/www/html/
 
 # Turn on web server
 
@@ -202,6 +208,10 @@ service httpd start
 
 
 <!---
+
+
+wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RESTRT-1/267-lab-NF-build-vpc-web-server/s3/lab-app.zip
+
 
 **1. In the left navigation menu, choose _Elastic IPs_.**
 **2. Choose _Allocate Elastic IP_ address.**
