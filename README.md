@@ -58,48 +58,77 @@ After completing the above steps, you can successfully complete this work using 
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo1.png)
 
-  2.Create an Internet Gateway and attach it to the newly created VPC
+  2\. Create an Internet Gateway and attach it to the newly created VPC
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo2.png)
 
-  3.Create Public Subnet -1 in Availability zone -1 with the CIDR 10.0.0.0/24
+  3\. Create Public Subnet -1 in Availability zone -1 with the CIDR 10.0.0.0/24
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo3.png)
 
-  4.Create Private Subnet -1 in Availability Zone -1 with CIDR of 10.0.1.0/24
+  4\. Create Private Subnet -1 in Availability Zone -1 with CIDR of 10.0.1.0/24
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo4.png)
 
-  5.Create an Elastic IP.
+  5\. Create an Elastic IP.
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo5.png)
 
-  6.Create a NAT Gateway using the Elastic IP using the Public Subnet -1 as base
+  6\. Create a NAT Gateway using the Elastic IP using the Public Subnet -1 as base
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo6.png)
 
-  7.Create Public Subnet -2 in Availability zone -2 with the CIDR 10.0.2.0/24
+  7\. Create Public Subnet -2 in Availability zone -2 with the CIDR 10.0.2.0/24
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo7.png)
 
-  8.Create Private Subnet -2 in Availability Zone -2 with the CIDR 10.0.3.0/24
+  8\. Create Private Subnet -2 in Availability Zone -2 with the CIDR 10.0.3.0/24
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo8.png)
 
-  9.Update Route Configurations for present Route Table and name it Private Route Table
+
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo9.png)
+
+  9\. Update Route Configurations for present Route Table and name it Private Route Table
 
 Update Private Route Table Route’s as follows
 
 | Destination |   Target    |
 | ----------- | ----------- |
 | 10.0.0.0/16 |    Local    |
-| ----------- | ----------- |
+|             |             |
 | 0.0.0.0/0   | NAT Gateway |
 
-![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo10.png)
 
+10
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo10.png)
+11
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo11.png)
+12
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo12.png)
+13
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo13.png)
+14
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo14.png)
+15
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo15.png)
+16
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo16.png)
+17
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo17.png)
+18
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo18.png)
+19
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo19.png)
+20
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo20.png)
+21
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo21.png)
+22
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo22.png)
+23
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo23.png)
 <!---
 
 **1. In the left navigation menu, choose _Elastic IPs_.**
