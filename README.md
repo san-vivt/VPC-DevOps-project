@@ -4,7 +4,7 @@ _This repository shows a test infrastructure in the AWS cloud._
 
 ---
 
-![Image diagram](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/VPC-Test-project.drawio.png)
+![Image diagram](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/VPC-Test-project28.drawio.png)
 
 # Creating a VPC
 
