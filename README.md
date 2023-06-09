@@ -104,6 +104,7 @@ Update Private Route Table Route’s as follows
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo10.png)
 
+  Create Public Route Table and update Route Configurations.
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo11.png)
 
@@ -126,10 +127,11 @@ Update Private Route Table Route’s as follows
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo14.png)
 
 
-Doublececk our Routes:
+  Doublececk our Public Routes:
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo18.png)
 
+  Doublececk our Private Routes:
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo19.png)
 
@@ -138,11 +140,11 @@ Doublececk our Routes:
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo15.png)
 
 
-  Connect by SSH:
+16. Connect by SSH:
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo16.png)
 
-  Follow these commands after a successful connection:
+17. Follow these commands after a successful connection:
 
   (Or make a .sh file give chmod and run)
 
