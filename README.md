@@ -15,48 +15,90 @@ We will also install a webserver on the EC-2 instance and access it using a web 
 
 ### Quick Check
 
-1\. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts)
+  1\. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts)
 
-2.Create an Internet Gateway and attach it to the newly created VPC
+  2.Create an Internet Gateway and attach it to the newly created VPC
 
-3.Create Public Subnet-1 in Availability Zone-1 with the CIDR 10.0.0.0/24
+  3.Create Public Subnet-1 in Availability Zone-1 with the CIDR 10.0.0.0/24
 
-4.Create Private Subnet-1 in Availability Zone-1 with CIDR of 10.0.1.0/24
+  4.Create Private Subnet-1 in Availability Zone-1 with CIDR of 10.0.1.0/24
 
-5.Create an Elastic IP.
+  5.Create an Elastic IP.
 
-6.Create a NAT Gateway using the Elastic IP and Public Subnet -1 as base
+  6.Create a NAT Gateway using the Elastic IP and Public Subnet -1 as base
 
-7.Create Public Subnet-2 in Availability Zone-2 with the CIDR 10.0.2.0/24
+  7.Create Public Subnet-2 in Availability Zone-2 with the CIDR 10.0.2.0/24
 
-8.Create Private Subnet-2 in Availability Zone-2 with the CIDR 10.0.3.0/24
+  8.Create Private Subnet-2 in Availability Zone-2 with the CIDR 10.0.3.0/24
 
-9.Update Route Configurations for present Route Table and name it Private Route Table
+  9.Update Route Configurations for present Route Table and name it Private Route Table
 
-10.Create Public Route Table and update Route Configurations
+  10.Create Public Route Table and update Route Configurations
 
-11.Create VPC Security Group to allow inbound HTTP,HTTPS and SSH
+  11.Create VPC Security Group to allow inbound HTTP,HTTPS and SSH
 
-12.Create EC-2 Instances using the VPC Created as base and the Public Subnet-1 as EC-2 Location.
+  12.Create EC-2 Instances using the VPC Created as base and the Public Subnet-1 as EC-2 Location.
 
-13.Enable Public IP for the EC-2 
+  13.Enable Public IP for the EC-2 
 
-15.Associate the VPC Security Group for the EC-2
+  15.Associate the VPC Security Group for the EC-2
 
-14.Update User Data for the EC-2
+  14.Update User Data for the EC-2
 
-15.Launch EC-2
+  15.Launch EC-2
 
-16.Test Webserver running on EC-2 using a browser.
+  16.Test Webserver running on EC-2 using a browser.
 
 After completing the above steps, you can successfully complete this work using the following guide:
 
 
 ### Step by Step Review
 
-1. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts).
+  1\. Create the VPC with the CIDR Block Range 10.0.0.0/16 (65000 Hosts).
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo1.png)
+
+  2.Create an Internet Gateway and attach it to the newly created VPC
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo2.png)
+
+  3.Create Public Subnet -1 in Availability zone -1 with the CIDR 10.0.0.0/24
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo3.png)
+
+  4.Create Private Subnet -1 in Availability Zone -1 with CIDR of 10.0.1.0/24
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo4.png)
+
+  5.Create an Elastic IP.
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo5.png)
+
+  6.Create a NAT Gateway using the Elastic IP using the Public Subnet -1 as base
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo6.png)
+
+  7.Create Public Subnet -2 in Availability zone -2 with the CIDR 10.0.2.0/24
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo7.png)
+
+  8.Create Private Subnet -2 in Availability Zone -2 with the CIDR 10.0.3.0/24
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo8.png)
+
+  9.Update Route Configurations for present Route Table and name it Private Route Table
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo9.png)
+
+Update Private Route Table Route’s as follows
+
+| Destination |   Target    |
+| ----------- | ----------- |
+| 10.0.0.0/16 |    Local    |
+| ----------- | ----------- |
+| 0.0.0.0/0   | NAT Gateway |
+
+![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo10.png)
 
 <!---
 
