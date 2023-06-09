@@ -101,26 +101,39 @@ Update Private Route Table Route’s as follows
 
 
 
-10
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo10.png)
-11
+
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo11.png)
-12
+
+  10\. Create Public Route Table and update Route Configurations.
+
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo12.png)
-13
+
+  11\. Create VPC Security Group to allow inbound HTTP,HTTPS and SSH
+
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo13.png)
-14
+
+
+  12\. Create EC-2 Instances using the VPC Created as Base and the Public Subnet -1 as EC-2 Location.
+  13\. Enable Public IP for the EC-2 
+  15\. Associate the VPC Security Group for the EC-2
+
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo14.png)
 
-17
-![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo17.png)
-18
+
+Doublececk our Routes:
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo18.png)
-19
+
+
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo19.png)
 
-  Connect our instance:
+  15\. Launch EC-2
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo15.png)
 
@@ -170,7 +183,7 @@ service httpd start
 
 ![DevOps-Project-photo](https://github.com/san-vivt/VPC-DevOps-project/raw/main/src/DevOps-Project-photo21.png)
 
-  Enter the magic command just for fun to load our one CPU core of the instance to 100%
+  Enter the magic command in terminal, just for fun, to load our one CPU core of the instance to 100%
 
   (# -- mean root user)
 
@@ -182,6 +195,8 @@ service httpd start
 
 
 <h1 align="center">Congratulations!!!</h1>
+
+
 
 
 <!---
